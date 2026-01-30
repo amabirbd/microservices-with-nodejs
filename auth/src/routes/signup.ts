@@ -1,10 +1,10 @@
 import express, { Request, Response} from 'express';
 import { body, validationResult } from 'express-validator';
-import { RequestValidationError } from '../errors/request-validation-error.js';
+import { RequestValidationError } from '@amabirbdticketing/ticketing-common-amabirbd';
 import { User } from '../models/user.js';
-import { BadRequestError } from '../errors/bad-request-error.js';
+import { BadRequestError } from '@amabirbdticketing/ticketing-common-amabirbd';
 import jwt from 'jsonwebtoken';
-import { validateRequest } from '../middlewares/validate-request.js';
+import { validateRequest } from '@amabirbdticketing/ticketing-common-amabirbd';
 
 const router = express.Router()
 
